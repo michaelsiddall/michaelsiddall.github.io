@@ -79,7 +79,9 @@ section {
   background-color: black;
   width: 10%;
 }
-
+.flex-container {
+  align-content: space-around;
+}
 .container {
   position: relative;
   text-align: center;
