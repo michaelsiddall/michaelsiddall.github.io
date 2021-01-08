@@ -118,6 +118,12 @@ hr {
   height: 0;
   overflow: visible;
 }
+.link {
+  color: black;
+}
+.link:hover {
+  color: #ff0000;
+}
 
 h1,
 h2,
@@ -133,7 +139,6 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
