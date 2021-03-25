@@ -38,9 +38,9 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: 'Antic Slab', serif, -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
+    BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
 }
@@ -99,8 +99,9 @@ section {
 body {
   margin: 0;
   font-family: 'Antic Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Cormorant Unicase', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -424,7 +425,8 @@ h6,
   margin-bottom: 0.5rem;
   font-family: 'Antic Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Cormorant Unicase', 'Noto Color Emoji';
   font-weight: 500;
   line-height: 1.2;
 }
@@ -2642,7 +2644,7 @@ textarea.form-control.is-invalid {
   -ms-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -2689,8 +2691,8 @@ fieldset:disabled a.btn {
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: #757575;
+  border-color: #757575;
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary.disabled,
@@ -5074,7 +5076,7 @@ a.badge:focus {
 a.badge-primary:hover,
 a.badge-primary:focus {
   color: #fff;
-  background-color: #ee3e0d;
+  background-color: #757575;
 }
 a.badge-primary:focus,
 a.badge-primary.focus {
@@ -6537,7 +6539,7 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ee3e0d !important;
+  background-color: #757575 !important;
 }
 
 .bg-secondary {
@@ -10478,7 +10480,7 @@ hr.light {
   font-size: 0.85rem;
   font-weight: 700;
   /* text-transform: uppercase; */
-  border: none;
+  border-color: #757575;
   border-radius: 10rem;
 }
 
