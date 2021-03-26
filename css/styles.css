@@ -50,6 +50,14 @@
   box-sizing: border-box;
 }
 
+.line-space {
+  margin-top: 2em;
+}
+
+.line-space2 {
+  line-height: 1.5em;
+}
+
 html {
   font-family: "Abel", serif;
   line-height: 1.15;
@@ -69,9 +77,32 @@ nav,
 section {
   display: block;
 }
+
 .self {
   border-radius: 50%;
-  /* filter: grayscale(100%); */
+  filter: grayscale(50%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 50%;
+  height: 100%;
+  padding-left: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+video {
+  width: 80%;
+  height: 80%;
+
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .divider2 {
@@ -119,7 +150,12 @@ hr {
 }
 .link {
   color: black;
+  margin-left: 2em;
+  margin-right: 4em;
+  text-align: center;
+  font-size: 20px;
 }
+
 .link:hover {
   color: rgb(191, 59, 59);
 }
@@ -133,11 +169,16 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+h2 {
+  margin: 0;
+  padding: 0;
+}
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -240,7 +281,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  -ms-overflow-style: scrollbar;
+  -ms-overflow-style: auto;
 }
 
 figure {
@@ -2691,7 +2732,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #757575;
   border-color: #757575;
-  box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
+  box-shadow: 0 0 0 0.1rem rgb(250, 249, 248);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -2709,7 +2750,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
+  box-shadow: 0 0 0 0.2rem rgb(250, 249, 248);
 }
 
 .btn-secondary {
@@ -7907,7 +7948,7 @@ button.bg-dark:focus {
 }
 
 .h-100 {
-  height: % !important;
+  height: 100% !important;
 }
 
 .h-auto {
@@ -10478,8 +10519,13 @@ hr.light {
   font-size: 1.4rem;
   font-weight: 700;
   /* text-transform: uppercase; */
-  border-color: #757575;
+  border-color: 1px #757575;
   border-radius: 10rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(165, 163, 163, 0.8) 0%,
+    rgba(86, 83, 82, 0.8) 100%
+  );
 }
 
 .page-section {
@@ -10562,7 +10608,7 @@ header.masthead {
       rgba(165, 163, 163, 0.8) 0%,
       rgba(86, 83, 82, 0.8) 100%
     ),
-    url("../assets/show_me_banner.jpg");
+    url("../assets/ticket_stub_color.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
